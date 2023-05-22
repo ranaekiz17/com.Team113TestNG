@@ -36,11 +36,20 @@ public class P02 {
 
     //ilk once wisequarte'a gidin
 
+
     @Test
-    public void wiseTest(){
+    public void wisequarter(){
         Driver.getDriver().get(ConfigReader.getProperty("wiseUrl"));
     }
 
-
+    @Test (dependsOnMethods = "wisequarter")
+    public void youtube(){
+        Driver.getDriver().get(ConfigReader.getProperty("youtubeUrl"));
+    }
+    @Test (dependsOnMethods = "youtube")
+    public void amazon(){
+        Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+        Driver.closeDriver();
+    }
 
 }
