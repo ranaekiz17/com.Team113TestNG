@@ -27,8 +27,8 @@ public class C05_QualitydemyLoginTesti {
 
 
         // basarili olarak giris yapildigini test edin
-
         Assert.assertTrue(qualitydemyPage.basariliGirisKontrolElementi.isDisplayed());
+
         // sayfayi kapatin
         Driver.closeDriver();
     }

@@ -2,7 +2,7 @@ package tests.day14_TestNGFrameworkOlusturma;
 
 import org.testng.annotations.Test;
 
-public class C01_Prioroty_ {
+public class C01_Priority {
 
     /*
       JUnit framework'de testlerin calisma sirasi
