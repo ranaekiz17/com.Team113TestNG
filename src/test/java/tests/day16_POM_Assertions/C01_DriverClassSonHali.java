@@ -14,6 +14,7 @@ public class C01_DriverClassSonHali {
     @Test
     public void amazonTest(){
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+
         String expectedIcerik ="amazon";
         String actualUrl= Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(expectedIcerik));
@@ -26,6 +27,7 @@ public class C01_DriverClassSonHali {
     @Test
     public void wiseTest(){
         Driver.getDriver().get(ConfigReader.getProperty("wiseUrl"));
+
         String expectedIcerik= "Wise Quarter";
         String actualTitle= Driver.getDriver().getTitle();
         Assert.assertTrue(actualTitle.contains(expectedIcerik));
@@ -38,6 +40,7 @@ public class C01_DriverClassSonHali {
     @Test
     public void facebookTest(){
         Driver.getDriver().get(ConfigReader.getProperty("faceUrl"));
+
         String expectedIcerik = "Facebook";
         String actualTitle=Driver.getDriver().getTitle();
         Assert.assertTrue(actualTitle.contains(expectedIcerik));
