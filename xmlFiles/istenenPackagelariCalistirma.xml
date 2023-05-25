@@ -2,19 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 
-<suite name="istenen package'lari calistirma">
+      <suite name="istenen package'lari calistirma">
 
-<test name="POM Testleri">
+      <test name="POM Testleri">
 
-<packages>
-    <package name="test.day15_POM">
-        
+     <packages>
+                <package name="tests.day15_POM"></package>
+                <package name="tests.day16_POM_Assertions"></package>
 
-    </package>
-
-</packages>
+     </packages>
 
 
-</test>
+     </test>
 
-</suite>
+     </suite>

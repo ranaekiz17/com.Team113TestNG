@@ -33,7 +33,7 @@ public class C06_QualitydemyNegatifLoginTesti {
     }
 
 
-    @Test
+    @Test (groups = "smoke")
     public void gecersizIsimTesti() {
         // QUALITYDEMY ANA SAYFAYA GIDIN
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));

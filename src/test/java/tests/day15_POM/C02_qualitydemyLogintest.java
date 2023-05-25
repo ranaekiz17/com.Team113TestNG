@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class C02_qualitydemyLogintest {
 
-    @Test
+    @Test (groups = "smoke")
     public void test01(){
 
         //QUALITYDEMY ANA SAYFAYA GIDIN
