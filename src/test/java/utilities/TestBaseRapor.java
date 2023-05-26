@@ -1,5 +1,8 @@
 package utilities;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -12,10 +15,10 @@ import java.util.Date;
 public class TestBaseRapor {
 
 
-    /*
     protected static ExtentReports extentReports; //extent report'a ilk atamayi yapar
     protected static ExtentTest extentTest; // test pass veya failed gibi bilgileri kaydeder. Ayrica ekran resmi icin de kullaniriz
     protected static ExtentHtmlReporter extentHtmlReporter; // Html raporu duzenler
+
 
     // Test işlemine başlamadan hemen önce (test methodundan önce değil, tüm test işleminden önce)
     @BeforeTest(alwaysRun = true) // alwaysRun : her zaman çalıştır.
@@ -34,6 +37,7 @@ public class TestBaseRapor {
         extentHtmlReporter.config().setDocumentTitle("TestNG Test");
         extentHtmlReporter.config().setReportName("TestNG Reports");
     }
+
 
     // Her test methodundan sonra eğer testte hata varsa, ekran görüntüsü alıp rapora ekliyor
     @AfterMethod(alwaysRun = true)
@@ -54,5 +58,4 @@ public class TestBaseRapor {
     public void tearDownTest() {
         extentReports.flush();
     }
-*/
 }

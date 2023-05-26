@@ -38,6 +38,7 @@ public class C01_ReusableMethodsSwitchingWindow {
         // 43.satir itibariyle yeni window acildi
         // artik 2 window var
 
+
         // Artik acilan 2.window'un windowHandleDegerine sahibiz
         //● Acilan yeni pencerenin sayfa başlığının (title) “New Window” oldugunu dogrulayin.
 
